@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  basePath: "/nextjs-foodies",
-  output: "standalone",
-  reactStrictMode: true,
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

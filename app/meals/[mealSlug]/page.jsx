@@ -15,6 +15,18 @@ export async function generateMetadata({ params }) {
   };
 }
 
+export async function generateStaticParams() {
+  return [
+    { mealSlug: "juicy-cheese-burger" },
+    { mealSlug: "spicy-curry" },
+    { mealSlug: "fresh-tomato-salad" },
+    { mealSlug: "homemade-dumplings" },
+    { mealSlug: "classic-mac-n-cheese" },
+    { mealSlug: "authentic-pizza" },
+    { mealSlug: "wiener-schnitzel" },
+  ];
+}
+
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.mealSlug);
 
